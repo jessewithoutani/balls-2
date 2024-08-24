@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+body {
+    background: #f4f4f4;
+    color: #444;
+    font-family: "Helvetica" !important;
+    font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Abril Fatface";
+    /* text-shadow: 3px 3px 0px #1e277f33; */
+}
+
+#main {
+    max-width: 550px;
+}
+
+.post {
+    padding: 25px;
+    text-align: left;
+    /* background: #fff;
+    outline: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #1e277f4d;
+    */
+    border-bottom: 1px solid #4444444d;
+}
+.post .row {
+    margin-bottom: 10px;
+}
+.post img {
+    /* border: 20px solid #eee;
+    border-bottom-width: 50px; */
+    border-radius: 10px;
+    /* box-shadow: 5px 5px 0px #1e277f4d; */
+    margin-bottom: 20px;
+    /* border: 3px solid #ddd; */
+    /* outline: 1px solid #666; */
+    box-shadow: 0 3px 5px #1e277f4d;
+}
+.grey {
+    color: #4444444d;
+}
