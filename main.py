@@ -42,7 +42,7 @@ def createPost(username: str, password: str, subject: str, content: str, image_u
     response_user = getUser(username).execute()
     # print(response_user)
     new_list = response_user.data[0]["post_ids"]
-    new_list.append(response.data[0]["id"])
+    new_list.insert(0, response.data[0]["id"])
     supabase.from_("users").update({ "post_ids": new_list }).eq("username", username).execute()
 
     return response.data
@@ -63,6 +63,14 @@ def user(username: str):
     print(data)
     return render_template("user.html", **data)
 
+
+@app.route("/images/<name>")
+def image(name: str):
+    return send_file(f"static/images/{name}")
+
+@app.route("/postdata/<id>")
+def postData(id: str):
+    return getPost(id)
 
 @app.route("/<path>")
 def path(path: str):
