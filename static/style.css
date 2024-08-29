@@ -10,12 +10,16 @@ body {
     font-size: 12px;
 }
 button {
-    border: 2px outset #333;
+    border: 1px solid #333;
+    border-radius: 50px;
+    padding: 3px 30px;
     background: inherit;
     font-family: inherit;
+    transition: 180ms;
 }
-button:active {
-    border-style: inset;
+button:hover {
+    background: #333;
+    color: #f4f4f4;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Abril Fatface";
@@ -67,6 +71,10 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 100%;
     width: 170px;
     height: 170px;
+}
+
+.hidden {
+    display: none;
 }
 
 @keyframes fade-in {
